@@ -8,8 +8,9 @@
  * Return: the value to returned
  */
 
-int main(int argc, char *argv[]__attribute__((unused)))
+int main(int argc, char *argv[])
 {
+	(void) argv;
 	printf("%d\n", argc);
 	return (0);
 }
