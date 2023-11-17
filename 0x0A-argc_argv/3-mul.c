@@ -3,7 +3,7 @@
 
 /**
  * _atoi -a str to an int
- * @s: converted str
+ * @str: converted str
  * Return: value to be rerutned
  */
 int _atoi(char *str)
@@ -30,7 +30,7 @@ int _atoi(char *str)
 			dgt = str[a] - '0';
 			if (b % 2)
 				dgt = -dgt;
-			c =c * 10 + dgt;
+			c = c * 10 + dgt;
 			f = 1;
 			if (str[a + 1] < '0' || str[a + 1] > '9')
 				break;
