@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
  * _strlen - str lenth
- * @a: string
+ * @s: string
  * Return: lnght str
  */
 int _strlen(char *s)
