@@ -11,14 +11,6 @@ int main(int argc, char *argv[])
 	int bytes, a;
 	char *array;
 
-	if (bytes < 0)
-	{
-		printf("Error\n");
-		exit(2);
-	}
-
-	array = (char *)main;
-
 	if (argc != 2)
 	{
 		printf("Error\n");
@@ -26,6 +18,14 @@ int main(int argc, char *argv[])
 	}
 
 	bytes = atoi(argv[1]);
+
+	if (bytes < 0)
+	{
+		printf("Error\n");
+		exit(2);
+	}
+
+	array = (char *)main;
 
 	a = 0;
 	while (a < bytes)
