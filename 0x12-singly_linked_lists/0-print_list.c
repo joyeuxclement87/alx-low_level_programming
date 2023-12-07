@@ -1,9 +1,9 @@
-#include "lists.h"
 #include <stdio.h>
+#include "lists.h"
 /**
- * print_list - entry [oint]
- * @h: pointer to print
- * Return: value for return
+ * print_list -entry point
+ * @h: pointer
+ * Return: valu to be returned
  */
 size_t print_list(const list_t *h)
 {
@@ -11,13 +11,12 @@ size_t print_list(const list_t *h)
 
 	while (h)
 	{
-		if (h->str)
-			printf("[%u] %s\n", h->len, h->str);
-		h = h->next
-	}
+		if (!h->str)
+		printf("[0] (nil)\n");
 		else
-			printf("[0] (nil)\n");
+			printf("[%u] %s\n", h->len, h->str);
+		h = h->next;
 		a++;
-}
-return (a);
+	}
+	return (a);
 }
