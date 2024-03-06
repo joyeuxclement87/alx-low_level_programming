@@ -24,7 +24,7 @@ while (slw != fst)
 slw = slw->next;
 fst = fst->next;
 }
-return (fast);
+return (fst);
 }
 }
 return (NULL);
