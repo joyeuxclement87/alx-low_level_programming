@@ -1,3 +1,2 @@
-# create make file first timw
-all: main.c school.c:wq
-    gcc main.c school.c -o school
+all: main.c school.c
+	gcc main.c school.c -o school
